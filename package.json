@@ -1,7 +1,7 @@
 {
   "name": "OR13h",
   "version": "1.0.0",
-  "description": "Hubot on OpenShift",
+  "description": "Experimental Twitter Hubot on OpenShift",
   "keywords": [
     "Hubot",
     "OpenShift",
@@ -26,8 +26,11 @@
     "hubot-google-images": "^0.1.5",
     "hubot-scripts": ">= 2.5.0 < 3.0.0",
     "hubot-twitter": "^2.1.1",
-    "hubot-youtube": "^1.0.1"
+    "hubot-youtube": "^1.0.1",
+     "express": "~3.4.4"
   },
+  "private": true,
+  "main": "server.js"
   "scripts": {
     "start": "PORT=$OPENSHIFT_NODEJS_PORT BIND_ADDRESS=$OPENSHIFT_NODEJS_IP HEROKU_URL=$OPENSHIFT_APP_DNS REDIS_URL=redis://:$REDIS_PASSWORD@$OPENSHIFT_REDIS_HOST:$OPENSHIFT_REDIS_PORT bin/hubot -n OR13h -a twitter"
   }
