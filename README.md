@@ -105,8 +105,22 @@ git push
 Create a new repo on github with the same name.
 
 ```
-git remote add origin git@github.com:OR13/OR13h.git
-git push -u origin master
+git remote add github git@github.com:OR13/OR13h.git
+git push -u github master
+
+```
+
+I like to rename the origin to openshift.
+
+```
+git remote rename origin openshift
+```
+
+Now we can:
+
+```
+git push github 
+git push openshift
 ```
 
 ### Adding More Scripts
