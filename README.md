@@ -114,6 +114,35 @@ git remote add origin git@github.com:OR13/OR13h.git
 git push -u origin master
 ```
 
+## 11. Adding More Scripts
+
+
+Lets say you want to add some more scripts to your hubot, say google images and youtube.
+
+For Google images, we can just:
+
+```
+npm install hubot-google-images --save
+```
+
+Don't forget to add to your external deps file:
+
+```
+"hubot-google-images"
+```
+
+For Youtube, we need to get some access keys first:
+
+See: https://github.com/hubot-scripts/hubot-youtube
+
+Then make sure that OpenShift can access the key:
+
+```
+
+rhc env set HUBOT_YOUTUBE_API_KEY=XXX -a OR13h
+
+```
+
 ## Credits
 
 These instructions were adopted from this wonderful blog post:
