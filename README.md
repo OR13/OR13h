@@ -1,5 +1,20 @@
 # OR13h - Twitter Bot powered by OpenShift and Github
 
+## Sample Usage:
+
+Using the google images scripts:
+
+```
+@OR13h image me invader zim gir
+```
+
+Using the youtube scripts:
+
+```
+@OR13h youtube nyan cat remix
+```
+
+## Getting Started From Scratch
 
 ### Clone Find Replace "OR13h" with "MyCoolAppName"...
 
