@@ -1,22 +1,16 @@
-# OR13h - Twitter Bot powered by OpenShift and Github
+# OR13h
+#### Twitter Bot powered by OpenShift and Github
 
-## Sample Usage:
-
-Using the google images scripts:
+Examples:
 
 ```
 @OR13h image me invader zim gir
-```
-
-Using the youtube scripts:
-
-```
 @OR13h youtube nyan cat remix
 ```
 
 ## Getting Started From Scratch
 
-### Clone Find Replace "OR13h" with "MyCoolAppName"...
+Clone Find Replace "OR13h" with "MyCoolAppName"...
 
 ### OpenShift RHC Setup
 
@@ -68,7 +62,7 @@ npm install hubot-twitter --save
 Create a new twitter account named OR13h. 
 Add a mobile number so you can create an app. Consider using google voice if you need a new number.
 Create a new app named OR13h here: https://apps.twitter.com/app/new
-Use  ``` rhc app show ``` to find your app url, mine looks like: http://or13h-<OpenShiftAccount>.rhcloud.com/
+Use  ``` rhc app show ``` to find your app url, mine looks like: http://or13h-OpenShiftAccount.rhcloud.com/
 Enter this app url for website and callback fields, add description, agree to TOS (after reading) and save.
 Go ahead and create an Access Token.
 
