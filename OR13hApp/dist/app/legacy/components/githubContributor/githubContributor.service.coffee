@@ -1,7 +1,7 @@
 angular.module "OR13hApp"
 .factory 'githubContributor', ['$log', '$http', ($log, $http) ->
 
-  apiHost = 'https://api.github.com/repos/OR13/OR13hApp'
+  apiHost = 'https://api.github.com/repos/OR13/OR13h'
 
   getContributors = (limit) ->
     getContributorsComplete = (response) ->

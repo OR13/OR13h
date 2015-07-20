@@ -103,7 +103,11 @@ module.exports = function (options) {
 
     gulp.task('build', ['html', 'fonts', 'other']);
 
-    gulp.task('build-dev', ['build']);
+    gulp.task('build-dev',[ 'build'], function () {
+        return gulp.src(options.dist + '/**/*.html')
+            .pipe($.replace('https://dev-api.example.com', ' http://or13h-ohsio.rhcloud.com/'))
+            .pipe(gulp.dest(options.dist + '/'));
+    });
 
     gulp.task('build-staging',[ 'build'], function () {
         return gulp.src(options.dist + '/**/*.html')
