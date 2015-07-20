@@ -1,5 +1,8 @@
 #!/bin/env node
 
+// var appPath = "./app/";
+var appPath = "./OR13hApp/dist";
+
 var util = require('util'),
     http = require('http'),
     fs = require('fs'),
@@ -47,7 +50,7 @@ HttpServer.prototype.start = function (port) {
 
 HttpServer.prototype.parseUrl_ = function (urlString) {
     var parsed = url.parse(urlString);
-    parsed.pathname = url.resolve('./app/', parsed.pathname);
+    parsed.pathname = url.resolve(appPath, parsed.pathname);
     return url.parse(url.format(parsed), true);
 };
 
@@ -87,7 +90,7 @@ StaticServlet.MimeMap = {
 
 StaticServlet.prototype.handleRequest = function (req, res) {
     var self = this;
-    var path = ('./app/' + req.url.pathname).replace('//', '/').replace(/%(..)/g, function (match, hex) {
+    var path = (appPath + req.url.pathname).replace('//', '/').replace(/%(..)/g, function (match, hex) {
         return String.fromCharCode(parseInt(hex, 16));
     });
     var parts = path.split('/');
