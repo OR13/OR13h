@@ -32,9 +32,7 @@ function createServlet(Class) {
 
 }
 
-
 function HttpServer(handlers) {
-
 
     this.handlers = handlers;
     this.server = http.createServer(this.handleRequest_.bind(this));
