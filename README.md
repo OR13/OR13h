@@ -59,12 +59,13 @@ npm install hubot-twitter --save
 
 ### Setup Your Twitter Account
 
-Create a new twitter account named OR13h. 
-Add a mobile number so you can create an app. Consider using google voice if you need a new number.
-Create a new app named OR13h here: https://apps.twitter.com/app/new
-Use  ``` rhc app show ``` to find your app url, mine looks like: http://or13h-OpenShiftAccount.rhcloud.com/
-Enter this app url for website and callback fields, add description, agree to TOS (after reading) and save.
-Go ahead and create an Access Token.
+- Create a new twitter account named OR13h. 
+- Add a mobile number so you can create an app. 
+- Consider using google voice if you need a new number.
+- Create a new app named OR13h here: https://apps.twitter.com/app/new.
+- Use  'rhc app show' to find your app url.
+- Enter this app url for website and callback fields, add description, agree to TOS (after reading) and save.
+- Go ahead and create an Access Token.
 
 ### Set Your Environment Variables
 
