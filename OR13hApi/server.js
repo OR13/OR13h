@@ -162,7 +162,7 @@ StaticServlet.prototype.sendError_ = function (req, res, error) {
 StaticServlet.prototype.sendMissing_ = function (req, res, path) {
 
     var self = this;
-    var path = 'OR13hApp/dist/404.html';
+    var path = 'OR13hApp/dist/index.html';
 
     var file = fs.createReadStream(path);
     res.writeHead(404, {
