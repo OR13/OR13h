@@ -1,7 +1,7 @@
 #!/bin/env node
 
 // var appPath = "./app/";
-var appPath = "./OR13hApp/dist";
+var appPath = "./OR13hApp/dist/";
 
 var util = require('util'),
     http = require('http'),
