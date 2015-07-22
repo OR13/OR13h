@@ -21,6 +21,7 @@ module.exports = function(options) {
   gulp.task('gh-deploy', ['gh-prep'], function () {
 
     var options = { 
+      remoteUrl: "https://github.com/OR13/OR13h.git",
       branch:  'gh-pages', 
       message: "v" + pack.version
     }
