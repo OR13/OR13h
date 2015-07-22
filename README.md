@@ -162,6 +162,17 @@ rhc env set HUBOT_YOUTUBE_API_KEY=XXX -a OR13h
 
 ```
 
+### Setting a Password
+
+```
+
+rhc env set OR13H_USER=XXX OR13H_PASSWORD=XXX -a OR13h
+
+```
+
+
+
+
 ### Credits
 
 These instructions were adopted from this wonderful blog post:
