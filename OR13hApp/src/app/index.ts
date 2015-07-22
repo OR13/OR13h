@@ -22,7 +22,7 @@ module OR13hApp {
         .controller('DemoController', DemoController)
         .config(['$locationProvider', '$stateProvider', '$urlRouterProvider', function ($locationProvider: ng.ILocationProvider, $stateProvider: ng.ui.IStateProvider, $urlRouterProvider: ng.ui.IUrlRouterProvider) {
 
-            $locationProvider.html5Mode(true);
+            $locationProvider.hashPrefix("!").html5Mode(false);
 
             $stateProvider
                 .state('typescript', {
