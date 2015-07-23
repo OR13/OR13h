@@ -23,10 +23,8 @@
   "dependencies": {
     "hubot": "^2.13.2",
     "hubot-firebase-brain": "^1.0.1",
-    "hubot-google-images": "^0.1.5",
     "hubot-scripts": ">= 2.5.0 < 3.0.0",
-    "hubot-twitter": "^2.1.1",
-    "hubot-youtube": "^1.0.1"
+    "hubot-twitter": "^2.1.1"
   },
   "scripts": {
     "start": "EXPRESS_USER=$OR13H_USER EXPRESS_PASSWORD=$OR13H_PASSWORD EXPRESS_STATIC=OR13hApp/dist PORT=$OPENSHIFT_NODEJS_PORT BIND_ADDRESS=$OPENSHIFT_NODEJS_IP HEROKU_URL=$OPENSHIFT_APP_DNS FIREBASE_URL=$FIREBASE_URL FIREBASE_SECRET=$FIREBASE_SECRET bin/hubot -n OR13h -a twitter"
